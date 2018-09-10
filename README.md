@@ -59,4 +59,6 @@ In a new shell
 
 Follow the instructions on SQG github repository closely. Install any dependencies required via pip. Ensure that on running the bloom file is loaded at run time and that the dbpedia endpoint is setup correctly. For this you might have to make 2 changes. Edit **kb/dbpedia.py** **\_\_init\_\_()** function and change the variable **endpoint** to a locally running dbpedia sparql endpoint. Change the variable **one_hop_bloom_file** to **./data/blooms/spo1.bloom**
 
+**Note:** The version deployed on https://asknowdemo.sda.tech uses 30ae3eb commit sha1 of SQG.
+
 This starts SQG at port 5000. We have completed the setup. You may now visit localhost:5001 on your web browser on the same machine and ask a question and see the three components replying.
